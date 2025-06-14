@@ -1,11 +1,8 @@
-class Product():
-    def __init__(self,name:string,price:int):
-        self.name = name
+class Product:
+    def __init__(self,product_name,price):
+        self.name = product_name
         self.price = price
-    def get_name(self) -> string:
-        return self.name
-    def get_price(self) -> string:
+    def get_price(self):
         return self.price
-    def change_price(self,new_price:int) -> None:
-        self.price = new_price
-        return
+    def get_name(self):
+        return self.name

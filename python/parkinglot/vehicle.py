@@ -1,8 +1,13 @@
 from abc import ABC
-from vehilce_type import VehicleType
+from vehicle_type import VehicleType
+
 class Vehicle(ABC):
-    def __init__(self,licence_plate:str,vehilce_type:VehicleType):
-        self.licence_plate = licence_plate
-        self.vehilce_type = vehilce_type
-    def get_plate(self):
-        return self.vehilce_type
+    def __init__(self,vehicle_type:VehicleType,plate_no:str):
+        self.plate_no = plate_no
+        self.vehicle_type = vehicle_type
+        self.owner = ""
+    def get_plate_no(self):
+        return self.plate_no
+    def get_vehicle_type(self):
+        return self.vehicle_type
+
